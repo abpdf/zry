@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function a2(){
+                var int=self.setInterval("a1()",1);
+            }
+            function a1(){
+                var a=Date.now();
+                var b=1681131049000;
+                var c=(a-b)/1000;
+                document.getElementById("a2").innerHTML=c+"秒";
+            }
+        </script>
+    </head>
+    <body>
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <button onclick="a2()">点击</button>
+            <br />
+            <h1 id="a2"></h1>
+          </div>
+    </body>
+</html>
